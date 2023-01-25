@@ -6,6 +6,6 @@ textArea.addEventListener('input', () => {
 });
 
 function getWordCount(str) {
-     return str.trim().split(/\s+/).length;
+     return str.trim().split(/\s/g).length;
 }
 
