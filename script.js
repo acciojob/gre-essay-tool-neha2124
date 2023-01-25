@@ -3,15 +3,12 @@ const textArea = document.getElementById('evaluatedText');
 textArea.addEventListener('input', () => {
     var textLn =  textArea.value;
     let count = document.getElementById('wordCount')
-    if(textLn =""){
-		count.innerHTML ='total word="0" '
-		
-	}else{
-		count.innerHTML='Total words: '+getWordCount(textLn);
-	}
-});
+   
+    count.innerHTML='Total words: '+getWordCount(textLn);
+	})
+
 
 function getWordCount(str) {
-     return str.trim().split(/\s/g).length;
+     return str.trim().split(" ").length;
 }
 
